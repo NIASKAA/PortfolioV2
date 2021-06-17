@@ -32,9 +32,11 @@ header.aboutImage {
     background-color: #6c757d;
     background-size: cover;
     background-attachment: scroll;
-    
-  }
-  header.aboutImage:before {
+    clip-path: url('/public/images/background2.jpg');
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 32%);
+}
+
+header.aboutImage:before {
     content: "";
     position: absolute;
     top: 0;
@@ -43,6 +45,5 @@ header.aboutImage {
     bottom: 0;
     background-color: #212529;
     opacity: 0.5;
-  }
+}
 
-  
