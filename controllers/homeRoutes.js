@@ -5,11 +5,11 @@ router.get("/", async (req, res) => {
     res.render("homepage")
 });
 
-router.get("/about", (req, res) => {
+router.get("/about", async (req, res) => {
   res.render("about")
 });
 
-router.get("/projects", (req, res) => {
+router.get("/projects", async (req, res) => {
     res.render("projects")
 });
 
