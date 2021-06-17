@@ -33,7 +33,7 @@ header.aboutImage {
     background-size: cover;
     background-attachment: scroll;
     clip-path: url('/public/images/background2.jpg');
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 32%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%);
 }
 
 header.aboutImage:before {
@@ -47,6 +47,13 @@ header.aboutImage:before {
     opacity: 0.5;
 }
 
+.introContent {
+    width: 38%;
+    text-align: left;
+    font-size: 25px;
+    margin: 40px;
+}
+
 section.aboutImage2 {
     position: relative;
     margin-bottom: 3rem;
@@ -57,7 +64,7 @@ section.aboutImage2 {
     background-size: cover;
     background-attachment: scroll;
     clip-path: url('/public/images/background2.jpg');
-    
+    clip-path: polygon(0 26%, 100% 0, 100% 75%, 0 100%);
 }
 
 section.aboutImage2:before {
