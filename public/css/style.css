@@ -27,7 +27,7 @@ header.aboutImage {
     position: relative;
     margin-bottom: 3rem;
     padding-top: calc(8rem + 57px);
-    padding-bottom: 8rem;
+    padding-bottom: 30rem;
     background: no-repeat center center;
     background-color: #6c757d;
     background-size: cover;
@@ -47,3 +47,26 @@ header.aboutImage:before {
     opacity: 0.5;
 }
 
+section.aboutImage2 {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-top: calc(8rem + 57px);
+    padding-bottom: 30rem;
+    background: no-repeat center center;
+    background-color: #6c757d;
+    background-size: cover;
+    background-attachment: scroll;
+    clip-path: url('/public/images/background2.jpg');
+    
+}
+
+section.aboutImage2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #212529;
+    opacity: 0.5;
+}
