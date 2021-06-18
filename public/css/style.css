@@ -13,6 +13,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
 }
 
 .secondText {
@@ -122,8 +123,11 @@ header.projectImage:before {
 .card {
     margin: 0px 0px 20px 40px;
 }
+
 .card-img-top {
     width: 100%;
     height: 30vh;
     object-fit: cover;
 }
+
+/* add animations for each button to slide */
