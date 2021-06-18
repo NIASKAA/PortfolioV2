@@ -13,5 +13,9 @@ router.get("/projects", async (req, res) => {
     res.render("projects")
 });
 
+router.get("/contact", async (req, res) => {
+  res.render('contact')
+})
+
 
 module.exports = router;
