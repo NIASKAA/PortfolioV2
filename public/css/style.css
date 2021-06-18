@@ -34,6 +34,8 @@ header.aboutImage {
     background-attachment: scroll;
     clip-path: url('/public/images/background2.jpg');
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%);
+    border: black;
+    border-width: 3px;
 }
 
 header.aboutImage:before {
@@ -65,7 +67,10 @@ section.aboutImage2 {
     background-attachment: scroll;
     clip-path: url('/public/images/background2.jpg');
     clip-path: polygon(0 26%, 100% 0, 100% 75%, 0 100%);
+    border: black;
+    border-width: 3px;
 }
+
 
 section.aboutImage2:before {
     content: "";
@@ -79,11 +84,37 @@ section.aboutImage2:before {
 }
 
 
-
 .skillsContent {
     float: right;
     width: 38%;
     text-align: right;
     font-size: 25px;
     margin: 40px;
+}
+
+/* Project Page */
+header.projectImage {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-top: calc(8rem + 57px);
+    padding-bottom: 30rem;
+    background: no-repeat center center;
+    background-color: #6c757d;
+    background-size: cover;
+    background-attachment: scroll;
+    clip-path: url('/public/images/background4.jpg');
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%);
+    border: black;
+    border-width: 3px;
+}
+
+header.projectImage:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #212529;
+    opacity: 0.5;
 }
