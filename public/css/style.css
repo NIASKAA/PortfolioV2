@@ -5,7 +5,7 @@
 .img-fluid {
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #212529;
+    background-color: #6c757d;
 }
 
 .mainText {
@@ -119,6 +119,3 @@ header.projectImage:before {
     opacity: 0.5;
 }
 
-.card {
-    height: 40%;
-}
