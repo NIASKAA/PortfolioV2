@@ -77,3 +77,13 @@ section.aboutImage2:before {
     background-color: #212529;
     opacity: 0.5;
 }
+
+
+
+.skillsContent {
+    float: right;
+    width: 38%;
+    text-align: right;
+    font-size: 25px;
+    margin: 40px;
+}
