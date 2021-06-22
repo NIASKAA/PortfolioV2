@@ -1,14 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
-
-.container-fluid {
-    padding-left: 0%;
-    padding-right: 0;
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
-.img-fluid {
-    background-size: cover;
-    background-repeat: no-repeat;
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: -10%;
+    height: 2.5rem;
+}
+
+.frontPage {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-top: calc(30rem);
+    padding-bottom: 30rem;
     background-color: #6c757d;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.frontPage:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #212529;
+    opacity: 0.5;
 }
 
 .mainText {
@@ -17,7 +42,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: 'Bungee shade';
+    font-family: 'Bangers';
+    font-size: 80px;
 }
 
 .secondText {
@@ -25,7 +51,8 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Bungee shade';
+    color: white;
+    font-family: 'Bangers';
 }
 
 /* about page */
@@ -54,18 +81,20 @@ header.aboutImage:before {
     background-color: #212529;
     opacity: 0.5;
 }
+.introTitle {
+    padding: 20px;
+}
 
 .introContent {
     width: 38%;
     text-align: left;
     font-size: 25px;
-    margin: 40px;
+    padding: 20px;
 }
 
 section.aboutImage2 {
-    position: relative;
     margin-bottom: 3rem;
-    padding-top: calc(8rem + 57px);
+    padding-top: calc(10rem);
     padding-bottom: 30rem;
     background: no-repeat center center;
     background-color: #6c757d;
@@ -89,13 +118,12 @@ section.aboutImage2:before {
     opacity: 0.5;
 }
 
-
-.skillsContent {
+.aboutSkills {
     float: right;
     width: 38%;
     text-align: right;
     font-size: 25px;
-    margin: 40px;
+    padding: 20px;
 }
 
 /* Project Page */
@@ -165,6 +193,7 @@ ul {
 }
 
 .btn {
+    font-family: "Bangers";
     color: white;
     font-size: 25px;
 }
@@ -172,4 +201,8 @@ ul {
 /* Contact */
  #email, #name, #textArea {
     width: 40%;
+}
+
+.emailForm {
+    margin: 20px;
 }
