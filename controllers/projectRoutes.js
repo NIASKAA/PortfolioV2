@@ -1,5 +1,3 @@
-const { route } = require("./homeRoutes");
-
 // Project Routes //
 const router = require("express").Router();
 
@@ -11,11 +9,11 @@ router.get('/nutricalifide', async (req, res) => {
     res.render('nutricalifide')
 });
 
-router.get('/theplugselect', async (req, res) => [
+router.get('/thePlugSelect', async (req, res) => [
     res.render('thePlugSelect')
 ])
 
-router.get('/ramenshop', async (req, res) => {
+router.get('/ramenShop', async (req, res) => {
     res.render('theRamenShop')
 })
 
