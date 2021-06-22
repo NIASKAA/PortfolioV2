@@ -49,6 +49,7 @@ const getData = (data) => {
         let email = info[infoData].email;
         let name = info[infoData].name;
         let message = info[infoData].message;
+        console.log(email, name, message);
     }
 }
 

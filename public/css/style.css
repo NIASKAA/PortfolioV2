@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
 .container-fluid {
     padding-left: 0%;
     padding-right: 0;
@@ -14,6 +17,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-family: 'Bungee shade';
 }
 
 .secondText {
@@ -21,6 +25,7 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Bungee shade';
 }
 
 /* about page */
@@ -134,7 +139,37 @@ header.projectImage:before {
 /* add animations for each button to slide */
 
 /* navbar */
+ul {
+    list-style-type: none;
+}
+
+.fab {
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin-in {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: black;
+    color: white;
+}
+
 .btn {
     color: white;
     font-size: 25px;
+}
+
+/* Contact */
+ #email, #name, #textArea {
+    width: 40%;
 }
