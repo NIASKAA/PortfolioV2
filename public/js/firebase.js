@@ -1,13 +1,16 @@
-require('dotenv').config();
+const firebaseConfig = {
+    apiKey: "AIzaSyBGEAr8IYNHtROyi1Bz-jyStsdeAhm_QWI",
+    authDomain: "portfolio-ce7d7.firebaseapp.com",
+    databaseURL: "https://portfolio-ce7d7-default-rtdb.firebaseio.com",
+    projectId: "portfolio-ce7d7",
+    storageBucket: "portfolio-ce7d7.appspot.com",
+    messagingSenderId: "228109022513",
+    appId: "1:228109022513:web:4dc6b6d9a99134c857ac10",
+    measurementId: "G-GMC4KYPSFR"
+  };
 
-let firebaseConfig = {
 
-}
-
-firebase.initialize(firebaseConfig);
-
-let contactInfo = firebase.database().ref("infos");
-document.querySelector(".emailForm").addEventListener("submit", submitEmailForm);
+firebase.initializeApp(firebaseConfig);
 
 const submitEmailForm = (test) => {
     test.preventDefault();
@@ -64,3 +67,6 @@ const sendEmail = (email, name, message) => {
     })
     .then((message) => alert("Mail has been sent"));
 }
+
+let contactInfo = firebase.database().ref("infos");
+document.querySelector(".emailForm").addEventListener("submit", submitEmailForm);
