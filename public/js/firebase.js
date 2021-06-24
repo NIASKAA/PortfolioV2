@@ -69,4 +69,11 @@ const sendEmail = (email, name, message) => {
 }
 
 let contactInfo = firebase.database().ref("infos");
-document.querySelector(".emailForm").addEventListener("submit", submitEmailForm);
+
+async function submitForm () {
+    console.log("Working");
+    let submit = document.querySelector(".contact-form");
+    submit.addEventListener("submit", submitEmailForm);
+};
+
+submitForm();

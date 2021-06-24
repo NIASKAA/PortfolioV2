@@ -1,8 +1,6 @@
 # Portfolio V3
 Recreating my portfolio for the third time using new knowledge
 
-![Logo]
-
     
 ## Tech Usage
 
@@ -21,7 +19,7 @@ Add badges from somewhere like:
 ## Deployment
 
 Link to github: https://github.com/NIASKAA \
-Link to heroku: 
+Link to heroku: https://niaskaportfoliov3.herokuapp.com/
 
 
 ## Authors

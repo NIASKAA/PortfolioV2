@@ -220,7 +220,7 @@ section.aboutImage2:before {
     left: calc(50% - 25px);
     background-color: #231f20;
   }
-  .coffe-medium__exit::after {
+  .coffed-medium__exit::after {
     content: "";
     width: 10px;
     height: 10px;
@@ -421,47 +421,94 @@ header.projectImage:before {
     object-fit: cover;
 }
 
-  .projectBtn{
-    display: block;
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: #333;
-    border: 2px solid #333;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
-  }
-  
-  .projectBtn span{
-    position: relative;
-    z-index: 2;
-  }
-  
-  .projectBtn:after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #0d6efd;
-    transition: all .35s;
-  }
-  
-  .projectBtn:hover{
-    color: #fff;
-  }
-  
-  .projectBtn:hover:after{
-    width: 100%;
-  }
+.projectBtn{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
 
-/* add animations for each button to slide */
+.projectBtn span{
+  position: relative;
+  z-index: 2;
+}
+
+.projectBtn:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #0d6efd;
+  transition: all .35s;
+}
+
+.projectBtn:hover{
+  color: #fff;
+}
+
+.projectBtn:hover:after{
+  width: 100%;
+}
+
+.proTitle {
+  margin: 20px;
+}
+
+.content {
+  margin: 20px;
+}
+
+.githubBtn{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  margin: 20px;
+}
+
+.githubBtn span{
+  position: relative;
+  z-index: 2;
+}
+
+.githubBtn:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #0d6efd;
+  transition: all .35s;
+}
+
+.githubBtn:hover{
+  color: #fff;
+}
+
+.githubBtn:hover:after{
+  width: 100%;
+}
 
 /* navbar */
 ul {
