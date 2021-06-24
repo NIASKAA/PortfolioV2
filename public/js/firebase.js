@@ -21,7 +21,7 @@ const submitEmailForm = (test) => {
 
     saveInfo(email, name, message);
 
-    document.querySelector(".emailForm").reset();
+    document.querySelector(".contact-form").reset();
 
     sendEmail(email, name, message);
 }

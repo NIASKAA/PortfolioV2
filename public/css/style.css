@@ -559,7 +559,7 @@ ul {
     border-radius: 4px;
 }
 
-/*.progress-bar {
+.progress-bar {
     position: absolute;
     height: 10px;
     width: 0;
@@ -586,4 +586,4 @@ svg {
     stroke-width: 3;
     stroke-linecap: round;
     stroke-linejoin: round;
-}*/
+}
