@@ -1,4 +1,3 @@
-const anime = require('animejs');
 var basicTimeline = anime.timeline({
     autoplay: false
   });

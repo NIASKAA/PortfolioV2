@@ -108,22 +108,72 @@ section.aboutImage2 {
 
 
 section.aboutImage2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #212529;
-    opacity: 0.5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #212529;
+  opacity: 0.5;
 }
 
 .aboutSkills {
-    float: right;
-    width: 38%;
-    text-align: right;
-    font-size: 25px;
-    padding: 20px;
+  float: right;
+  width: 38%;
+  text-align: right;
+  font-size: 25px;
+  padding: 20px;
+}
+
+svg {
+  width: 256px;
+  height: 256px;
+  position: absolute;
+  right: 40%;
+}
+
+/* SMOKE */
+#smoke-1 {
+  stroke-dasharray: 0, 10;
+  animation: smoke 6s ease infinite;
+}
+
+#smoke-2 {
+  stroke-dasharray: 0, 10;
+  animation: smoke 6s 0.5s ease infinite;
+}
+
+@keyframes smoke {
+  0% { stroke-dasharray: 0, 10; }
+  50% { stroke-dasharray: 10, 0; }
+  100% { stroke-dasharray: 10, 0; opacity: 0; }
+}
+
+/* WRITING */
+#line-1 {
+  opacity: 0;
+  animation: writing 0.5s linear forwards;
+}
+
+#line-2 {
+  opacity: 0;
+  animation: writing 0.5s 1s linear forwards;
+}
+
+#line-3 {
+  opacity: 0;
+  animation: writing 0.5s 1.5s linear forwards;
+}
+
+#line-4 {
+  opacity: 0;
+  animation: writing 0.5s 2s linear forwards;
+}
+
+@keyframes writing {
+  0% { width: 0px; opacity: 1;}
+  100% { width: 14px; opacity: 1;}
 }
 
 .coffeeContainer {
@@ -202,7 +252,7 @@ section.aboutImage2:before {
     left: calc(50% - 45%);
     border-radius: 20px 20px 0 0;
   }
-  .coffe-medium__exit {
+  .coffee-medium__exit {
     width: 60px;
     height: 20px;
     position: absolute;
@@ -210,7 +260,7 @@ section.aboutImage2:before {
     left: calc(50% - 30px);
     background-color: #231f20;
   }
-  .coffe-medium__exit::before {
+  .coffee-medium__exit::before {
     content: "";
     width: 50px;
     height: 20px;
@@ -220,7 +270,7 @@ section.aboutImage2:before {
     left: calc(50% - 25px);
     background-color: #231f20;
   }
-  .coffed-medium__exit::after {
+  .coffee-medium__exit::after {
     content: "";
     width: 10px;
     height: 10px;
@@ -427,7 +477,7 @@ header.projectImage:before {
   height: 40px;
   line-height: 40px;
   font-size: 18px;
-  font-family: sans-serif;
+  font-family: "Bangers";
   text-decoration: none;
   color: #333;
   border: 2px solid #333;
@@ -475,7 +525,7 @@ header.projectImage:before {
   height: 40px;
   line-height: 40px;
   font-size: 18px;
-  font-family: sans-serif;
+  font-family: "Bangers";
   text-decoration: none;
   color: #333;
   border: 2px solid #333;
@@ -512,14 +562,14 @@ header.projectImage:before {
 
 /* navbar */
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .fab {
-    font-size: 30px;
-    width: 100px;
-    text-align: center;
-    text-decoration: none;
+  font-size: 30px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .fab:hover {
@@ -542,6 +592,9 @@ ul {
     font-size: 25px;
 }
 
+.emailTitle {
+  font-family: "Bangers";
+}
 /* Contact */
  #email, #name, #textArea {
     width: 40%;
@@ -559,31 +612,3 @@ ul {
     border-radius: 4px;
 }
 
-.progress-bar {
-    position: absolute;
-    height: 10px;
-    width: 0;
-    right: 0;
-    top: 50%;
-    left: 50%;
-    border-radius: 200px;
-    transform: translateY(-50%) translateX(-50%);
-    background: lighten(#2B2D2F, 15%);
-}
-
-svg {
-    width: 30px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    left: 50%;
-    right: 0;
-}
-
-.check {
-    fill: none;
-    stroke: #FFFFFF;
-    stroke-width: 3;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
